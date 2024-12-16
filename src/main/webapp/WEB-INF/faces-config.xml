@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config>
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+    
+    <managed-bean>
+        <managed-bean-name>sarrera</managed-bean-name>
+        <managed-bean-class>eredua.bean.SarreraBean</managed-bean-class>
+        <managed-bean-scope>application</managed-bean-scope> <!-- Ámbito de la solicitud -->
+    </managed-bean>
+    <navigation-rule>
+    	<display-name>sarrera.xhtml</display-name>
+    	<from-view-id>/sarrera.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>ok1</from-outcome>
+    		<to-view-id>/createRide.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+    	<display-name>sarrera.xhtml</display-name>
+    	<from-view-id>/sarrera.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>ok2</from-outcome>
+    		<to-view-id>/queryRides.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+    	<display-name>sarrera.xhtml</display-name>
+    	<from-view-id>/sarrera.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>ok3</from-outcome>
+    		<to-view-id>/hiriBatetik.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+
+
+</faces-config>
